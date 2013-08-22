@@ -14,6 +14,19 @@ Instal the bundle with composer
 ...
 ```
 
+Enable the bundle in your `app/AppKernel.php`
+
+```php
+// app/AppKernel.php
+
+...
+    $bundles = array(
+        ...
+        new Ferrandini\Bundle\PDOSessionBundle\FerrandiniPDOSessionBundle(),
+    );
+...
+```
+
 Configure your session hanlder in `config.yml`
 
 ```yml
